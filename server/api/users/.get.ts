@@ -1,4 +1,3 @@
-import { prisma } from "../../db/prisma"
 export default defineEventHandler(async (event) => {
   const allUsers = await prisma.user.findMany({
     include: {
@@ -6,7 +5,5 @@ export default defineEventHandler(async (event) => {
     },
   })
   console.log('All users:', JSON.stringify(allUsers, null, 2))
-
-  prisma.$disconnect();
   return allUsers;
 })

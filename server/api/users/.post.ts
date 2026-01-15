@@ -1,4 +1,3 @@
-import { prisma } from "../../db/prisma"
 export default defineEventHandler(async (event) => {
   console.log('clicked')
   const user = await prisma.user.create({
@@ -18,7 +17,5 @@ export default defineEventHandler(async (event) => {
     },
   })
   console.log('Created user:', user)
-
-  prisma.$disconnect();
   return user;
 })
