@@ -1,0 +1,23 @@
+{
+  "name": "hello-prisma-mongo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19",
+    "@types/node": "^25.0.8",
+    "dotenv": "^17.2.3",
+    "nuxt": "^4.2.2",
+    "prisma": "6.19",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  }
+}
